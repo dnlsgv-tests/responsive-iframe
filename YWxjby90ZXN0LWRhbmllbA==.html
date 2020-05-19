@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apollo</title>
+    
+<link rel="stylesheet" type="text/css" href="./survey-all-styles.css">
+
+  </head>
+  <body>
+    
+<div id="surveyElement">
+  <survey :survey='survey'/>
+</div>
+
+    
+<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<script src="https://surveyjs.azureedge.net/1.5.18/survey.vue.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.6.4/showdown.min.js"></script>
+<script src="./iframe-survey-script.js"></script>
+<script type="text/javascript">
+    window.onresize = function(event) {
+        var realBrowserWidth;
+        if(document.body && document.body.offsetWidth) {
+            realBrowserWidth = document.body.offsetWidth;
+        }
+        if(document.compatMode=='CSS1Compat' && document.documentElement && document.documentElement.offsetWidth ) {
+            realBrowserWidth = document.documentElement.offsetWidth;
+        }
+        if(window.innerWidth) {
+            realBrowserWidth = window.innerWidth;
+        }
+
+        console.log('Dentro del iframe, width: ' + realBrowserWidth)
+    }
+
+</script>
+  </body>
+</html>
