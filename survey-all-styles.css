@@ -741,7 +741,7 @@ span.sv_q_rating_item_text {
 /*540px*/
 @media only screen and (max-width: 538px) {
     .sv_main .sv_container .sv_body .sv_p_root .sv_q_rating {
-        width: 280px;
+        width: 285px;
         display: block;
         margin: auto;
         margin-top: 20px;
