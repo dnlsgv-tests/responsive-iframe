@@ -717,17 +717,7 @@ h4.sv_page_title {
     font-weight: 400 !important;
 }
 
-
-/*SQUARE NPS*/
-span.sv_q_rating_item_text {
-    width: 45px;
-    height: 40px;
-    border-radius: 0;
-    box-sizing: border-box;
-    margin-right: 0;
-    border-color: #F0F4F7 !important;
-}
-
+/*BEGIN RESPONSIVE STYLES*/
 
 /*320px*/
 @media only screen and (max-width: 318px) {
@@ -772,7 +762,7 @@ span.sv_q_rating_item_text {
         padding-bottom: 0 !important;
     }
 }
-
+/*END RESPONSIVE STYLES*/
 
 
 
