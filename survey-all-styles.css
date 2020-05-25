@@ -620,8 +620,15 @@ span.sv_q_rating_item_text {
     padding: 4px !important;
 }
 .sv_main .sv_q_rating_item.active .sv_q_rating_item_text {
-    border: none;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+/*    border: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);*/
+/*    box-sizing: border-box;*/
+    border: 1px solid #E500F6 !important;
+/*    border-top-color: #E500F6 !important;
+    border-bottom-color: #E500F6 !important;
+    border-left-color: #E500F6 !important;
+    border-right-color: #E500F6 !important;*/
+    z-index: 900000000;
 }
 .sv_main .sv_body {
     background-color: #fff;
