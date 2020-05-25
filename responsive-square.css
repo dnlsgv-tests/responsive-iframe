@@ -1,13 +1,22 @@
-/*BEGIN RESPONSIVE STYLES*/
-
 /*320px*/
 @media only screen and (max-width: 318px) {
     .sv_main .sv_container .sv_body .sv_p_root .sv_q_rating {
-        width: 270px !important;
+        width: 100% !important;
         display: block;
         margin: auto;
     }
+
+    div.sv_qstn {
+        padding: 0 !important;
+    }
+    span.sv_q_rating_item_text {
+        min-width: 25px !important;
+        max-width: 25px !important;
+        font-size: 12px !important;
+    }
 }
+
+
 /*360px*/
 @media only screen and (max-width: 358px) {
     .sv_main .sv_container .sv_body .sv_p_root .sv_q_rating {
@@ -20,9 +29,26 @@
         padding: 0 !important;
     }
     span.sv_q_rating_item_text {
-        width: 30px;
+        width: 30px !important;
     }
 }
+
+/*375px*/
+@media only screen and (max-width: 373px) {
+    .sv_main .sv_container .sv_body .sv_p_root .sv_q_rating {
+        width: 100% !important;
+        display: block;
+        margin: auto;
+    }
+
+    div.sv_qstn {
+        padding: 0 !important;
+    }
+    span.sv_q_rating_item_text {
+        width: 30px !important;
+    }
+}
+
 
 /*411px*/
 @media only screen and (max-width: 409px) {
@@ -37,6 +63,19 @@
     }
 }
 
+/*425px*/
+@media only screen and (max-width: 423px) {
+    .sv_main .sv_container .sv_body .sv_p_root .sv_q_rating {
+        width: 100% !important;
+        display: block;
+        margin: auto;
+    }
+
+    span.sv_q_rating_item_text {
+        width: 32px;
+    }
+}
+
 /*540px*/
 @media only screen and (max-width: 538px) {
     .sv_main .sv_container .sv_body .sv_p_root .sv_q_rating {
@@ -44,10 +83,6 @@
         display: block;
         margin: auto;
         margin-top: 20px;
-    }
-
-    .sv_main .sv_container .sv_body .sv_p_root .sv_q_rating .sv_q_rating_min_text {
-        /*margin-top: -25px;*/
     }
 
     /*ONLY SQUARE*/
@@ -92,6 +127,5 @@
         padding-bottom: 0 !important;
     }
 }
-/*END RESPONSIVE STYLES*/
 
 
