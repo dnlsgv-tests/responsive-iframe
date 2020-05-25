@@ -22,7 +22,7 @@
         _apollo_frame = {};
 
         var json = {"pages": [{"name": "p\u00e1gina1", "title": "hola **daniel**", "elements": [{"name": "b_nps", "type": "rating", "title": "[NPS rating] Ingresa el texto **requerido** haciendo click aqu\u00ed", "rateMax": 10, "rateMin": 0, "isRequired": true, "requiredErrorText": {"es": "Debe ingresar una calificaci\u00f3n"}}, {"name": "b_verbatim-1", "type": "comment", "title": "[NPS entre 0 y 6] Escribe el texto para cuando b_nps sea menor a 6", "visibleIf": "{b_nps} <= 6", "isRequired": true, "placeHolder": {"es": "Comente"}, "requiredErrorText": {"es": "Debe ingresar una respuesta"}}, {"name": "b_verbatim-2", "type": "comment", "title": "[NPS entre 7 y 8] Escribe el texto para cuando b_nps est\u00e9 entre 7 y 8", "visibleIf": "{b_nps} = 7 or {b_nps} = 8", "isRequired": true, "placeHolder": {"es": "Comente"}, "requiredErrorText": {"es": "Debe ingresar una respuesta"}}, {"name": "b_verbatim-3", "type": "comment", "title": "[NPS entre 9 y 10] Escribe el texto para cuando b_nps est\u00e9 entre 9 y 10", "visibleIf": "{b_nps} >= 9", "isRequired": true, "placeHolder": {"es": "Comente"}, "requiredErrorText": {"es": "Debe ingresar una respuesta"}}, {"html": "[Texto inferior] este es un _texto_ de **ejemplo**", "name": "pregunta1", "type": "html", "visible": false}], "description": "texto _cursiva_ y este en **negrita**"}], "mainSurveyColor": "#11CEEB", "sideButtonColor": "#99FF00", "buttonTextNotNow": "Ahora no", "surveyFontFamily": "PFBeauSansPro", "surveyTitleColor": "#F2C110", "surveyQuestionColor": "#1B0303", "surveyDisclaimerColor": "#040000"};
-        json = {"completedHtml":"<h1>¡Gracias por ayudarnos a ser mejores!</h1>\n<p>Estamos constantemente trabajando para mejorar tu experiencia y tus\ncomentarios siempre son de gran ayuda. ¡Gracias por preferirnos!</p>","pages":[{"name":"página1","elements":[{"type":"rating","name":"b_nps","title":"¿Qué tanto recomendarías Banco Falabella a un familiar o amigo?","isRequired":true,"requiredErrorText":{"es":"Debe ingresar una calificación"},"rateMin":0,"rateMax":10,"minRateDescription":"No lo recomendaría","maxRateDescription":"Lo recomendaría"},{"type":"comment","name":"b_verbatim-1","visibleIf":"{b_nps} <= 6","title":"¿Qué es lo que valoras de Banco Falabella? I","isRequired":true,"requiredErrorText":{"es":"Debe ingresar una respuesta"},"placeHolder":{"es":"Comente","default":"Tu opinión es muy importante para nosotros."}},{"type":"comment","name":"b_verbatim-2","visibleIf":"{b_nps} = 7 or {b_nps} = 8","title":"¿Qué es lo que valoras de Banco Falabella? II","isRequired":true,"requiredErrorText":{"es":"Debe ingresar una respuesta"},"placeHolder":{"es":"Comente"}},{"type":"comment","name":"b_verbatim-3","visibleIf":"{b_nps} >= 9","title":"¿Qué es lo que valoras de Banco Falabella? III","isRequired":true,"requiredErrorText":{"es":"Debe ingresar una respuesta"},"placeHolder":{"es":"Comente"}},{"type":"html","name":"pregunta1","visible":false,"html":"[Texto inferior] este es un _texto_ de **ejemplo**"}],"title":"**¡Cuéntanos como te fue!**","description":"Basado en tu experiencia. "}],"showQuestionNumbers":"off","completeText":"Enviar","mainSurveyColor":"#777E87","sideButtonColor":"#0E166A","buttonTextNotNow":"Ahora no","surveyFontFamily":"PFBeauSansPro","surveyTitleColor":"#42955F","surveyQuestionColor":"#2F2E1A","surveyDisclaimerColor":"#2A3731","surveyQuestionNpsShape":"circle"};
+        json = {"pages": [{"name": "página1", "title": "**¡Cuéntanos como te fue!**", "elements": [{"name": "b_nps", "type": "rating", "title": "¿Qué tanto recomendarías Banco Falabella a un familiar o amigo?", "rateMax": 10, "rateMin": 0, "isRequired": true, "requiredErrorText": {"es": "Debe ingresar una calificación"}, "maxRateDescription": "Lo recomendaría", "minRateDescription": "No lo recomendaría"}, {"name": "b_verbatim-1", "type": "comment", "title": "¿Qué es lo que valoras de Banco Falabella? I", "visibleIf": "{b_nps} <= 6", "isRequired": true, "placeHolder": {"es": "Comente", "default": "Tu opinión es muy importante para nosotros."}, "requiredErrorText": {"es": "Debe ingresar una respuesta"}}, {"name": "b_verbatim-2", "type": "comment", "title": "¿Qué es lo que valoras de Banco Falabella? II", "visibleIf": "{b_nps} = 7 or {b_nps} = 8", "isRequired": true, "placeHolder": {"es": "Comente"}, "requiredErrorText": {"es": "Debe ingresar una respuesta"}}, {"name": "b_verbatim-3", "type": "comment", "title": "¿Qué es lo que valoras de Banco Falabella? III", "visibleIf": "{b_nps} >= 9", "isRequired": true, "placeHolder": {"es": "Comente"}, "requiredErrorText": {"es": "Debe ingresar una respuesta"}}, {"html": "[Texto inferior] este es un _texto_ de **ejemplo**", "name": "pregunta1", "type": "html", "visible": false}], "description": "Basado en tu experiencia. "}], "completeText": "Enviar", "completedHtml": "<h1>¡Gracias por ayudarnos a ser mejores!</h1>\n<p>Estamos constantemente trabajando para mejorar tu experiencia y tus\ncomentarios siempre son de gran ayuda. ¡Gracias por preferirnos!</p>", "mainSurveyColor": "#EC07F8", "sideButtonColor": "#0E166A", "buttonTextNotNow": "Ahora no", "surveyFontFamily": "PFBeauSansPro", "surveyTitleColor": "#42955F", "showQuestionNumbers": "off", "surveyQuestionColor": "#2F2E1A", "surveyDisclaimerColor": "#2A3731", "surveyQuestionNpsShape": "square"};
 
         var extras = {"b_algo": "HOLA"};
         var defaultThemeColors = {};
@@ -59,6 +59,38 @@
                 .catch(function (error) {
                 });
             });
+
+        console.log("*****");
+        _apollo_frame.script.onAfterRenderQuestion.add(function() {
+            let newNpsShapeValue = json.surveyQuestionNpsShape;
+
+            if(newNpsShapeValue === undefined || newNpsShapeValue === 'circle') return;
+
+            let npsElements = document.getElementsByClassName('sv_q_rating_item_text');
+
+            for(let i = 0; i < npsElements.length; i++) {
+                let currentElement = npsElements[i];
+
+                if(currentElement.classList.contains('sv_q_rating_item_text')) {
+                    if(newNpsShapeValue === 'square') {
+                        currentElement.classList.add('local-square-nps');
+                    }
+                }
+            }
+
+            if(newNpsShapeValue === 'square') {
+                let css = '.sv_main .sv_container .sv_body .sv_p_root .sv_q_rating .sv_q_rating_item:not(:first-child) .sv_q_rating_item_text:not(:hover) { border-left-color: transparent !important; }';
+                let style = document.createElement('style');
+
+                if(style.styleSheet) {
+                    style.styleSheet.cssText = css;
+                } else {
+                    style.appendChild(document.createTextNode(css));
+                }
+                document.getElementsByTagName('head')[0].appendChild(style);
+            }
+        });
+        console.log("*****");
 
         var converter = new showdown.Converter();
         _apollo_frame.script.onTextMarkdown.add(function (survey, options) {

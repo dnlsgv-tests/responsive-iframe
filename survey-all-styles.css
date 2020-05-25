@@ -717,6 +717,26 @@ h4.sv_page_title {
     font-weight: 400 !important;
 }
 
+
+.local-square-nps {
+  width: 45px !important;
+  height: 40px !important;
+  border-radius: 0 !important;
+  margin-right: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*BEGIN RESPONSIVE STYLES*/
 
 /*320px*/
@@ -763,21 +783,5 @@ h4.sv_page_title {
     }
 }
 /*END RESPONSIVE STYLES*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
