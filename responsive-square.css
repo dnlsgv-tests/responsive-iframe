@@ -1,0 +1,97 @@
+/*BEGIN RESPONSIVE STYLES*/
+
+/*320px*/
+@media only screen and (max-width: 318px) {
+    .sv_main .sv_container .sv_body .sv_p_root .sv_q_rating {
+        width: 270px !important;
+        display: block;
+        margin: auto;
+    }
+}
+/*360px*/
+@media only screen and (max-width: 358px) {
+    .sv_main .sv_container .sv_body .sv_p_root .sv_q_rating {
+        width: 100% !important;
+        display: block;
+        margin: auto;
+    }
+
+    div.sv_qstn {
+        padding: 0 !important;
+    }
+    span.sv_q_rating_item_text {
+        width: 30px;
+    }
+}
+
+/*411px*/
+@media only screen and (max-width: 409px) {
+    .sv_main .sv_container .sv_body .sv_p_root .sv_q_rating {
+        width: 100% !important;
+        display: block;
+        margin: auto;
+    }
+
+    span.sv_q_rating_item_text {
+        width: 30px;
+    }
+}
+
+/*540px*/
+@media only screen and (max-width: 538px) {
+    .sv_main .sv_container .sv_body .sv_p_root .sv_q_rating {
+        width: 285px;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .sv_main .sv_container .sv_body .sv_p_root .sv_q_rating .sv_q_rating_min_text {
+        /*margin-top: -25px;*/
+    }
+
+    /*ONLY SQUARE*/
+    div[name="b_nps"] {
+        padding: 0;
+    }
+
+    .local-square-nps {
+        width: 25px;
+        height: 40px !important;
+        border-radius: 0 !important;
+        margin-right: 0 !important;
+    }
+    .sv_main .sv_container .sv_body .sv_p_root .sv_q_rating {
+        width: 100%;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .sv_main .sv_container .sv_body .sv_p_root .sv_q_rating .sv_q_rating_min_text {
+        /*margin-top: -25px;*/
+    }
+}
+/* < 576, Dentro del iframe son 2 pixeles menos que en el html donde se incrusta*/
+@media only screen and (max-width: 574px) {
+    .sv_body {
+        /*background-color: orange !important;*/
+    }
+    
+    input.sv_complete_btn {
+        width: 50%;
+        border-radius: 0 !important;
+    }
+    
+    button#close-modal-survey-button {
+        width: 50%;
+        margin: 0 !important;
+        border-radius: 0 !important;
+    }
+
+    .sv_main .sv_container .sv_body {
+        padding-bottom: 0 !important;
+    }
+}
+/*END RESPONSIVE STYLES*/
+
+

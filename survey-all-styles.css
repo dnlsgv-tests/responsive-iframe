@@ -719,7 +719,7 @@ h4.sv_page_title {
 
 
 .local-square-nps {
-  width: 45px !important;
+  width: 45px;
   height: 40px !important;
   border-radius: 0 !important;
   margin-right: 0 !important;
@@ -737,7 +737,16 @@ h4.sv_page_title {
 
 
 
-/*BEGIN RESPONSIVE STYLES*/
+/*SQUARE NPS*/
+span.sv_q_rating_item_text {
+    width: 45px;
+    height: 40px;
+    border-radius: 0;
+    box-sizing: border-box;
+    margin-right: 0;
+    border-color: #F0F4F7 !important;
+}
+
 
 /*320px*/
 @media only screen and (max-width: 318px) {
@@ -782,6 +791,6 @@ h4.sv_page_title {
         padding-bottom: 0 !important;
     }
 }
-/*END RESPONSIVE STYLES*/
+
 
 
