@@ -9,8 +9,8 @@
     }
 }
 
-/*540px*/
-@media only screen and (max-width: 538px) {
+/* < 540px*/
+@media only screen and (max-width: 537px) {
     .sv_main .sv_container .sv_body .sv_p_root .sv_q_rating {
         width: 285px;
         display: block;
@@ -24,8 +24,7 @@
 }
 /* < 576, Dentro del iframe son 2 pixeles menos que en el html donde se incrusta*/
 @media only screen and (max-width: 574px) {
-    .sv_body {
-        /*background-color: orange !important;*/
+    /*.sv_body {
     }
     
     input.sv_complete_btn {
@@ -41,6 +40,6 @@
 
     .sv_main .sv_container .sv_body {
         padding-bottom: 0 !important;
-    }
+    }*/
 }
 /*END RESPONSIVE STYLES*/
