@@ -139,8 +139,8 @@ span.sv_q_rating_item_text {
 }
 /* < 576, Dentro del iframe son 2 pixeles menos que en el html donde se incrusta*/
 @media only screen and (max-width: 574px) {
-    .sv_body {
-        /*background-color: orange !important;*/
+/*    .sv_body {
+  
     }
     
     input.sv_complete_btn {
@@ -156,7 +156,7 @@ span.sv_q_rating_item_text {
 
     .sv_main .sv_container .sv_body {
         padding-bottom: 0 !important;
-    }
+    }*/
 }
 
 

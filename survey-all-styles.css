@@ -725,14 +725,37 @@ h4.sv_page_title {
   margin-right: 0 !important;
 }
 
+/* < 540px || <= 539px */
+@media only screen and (max-width: 537px) {
+    
+    input.sv_complete_btn {
+        width: 50%;
+        border-radius: 0 !important;
+    }
+    
+    button#close-modal-survey-button {
+        width: 50%;
+        margin: 0 !important;
+        border-radius: 0 !important;
+    }
+
+    .sv_main .sv_container .sv_body {
+        padding-bottom: 0 !important;
+    }
+}
 
 
+@media only screen and (max-width: 539px) {
+    
+    .sv_body {
+        background-color: blue;
+  
+    }
+    div[name="b_nps"] {
+        padding: 0;
+    }
 
-
-
-
-
-
-
-
-
+    .sv_qstn {
+        padding: 0 !important;
+    }
+}
