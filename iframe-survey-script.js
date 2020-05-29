@@ -102,7 +102,7 @@
             } else {
                 style.appendChild(document.createTextNode(css));
             }
-            document.getElementsByTagName('head')[0].appendChild(style);            
+            document.getElementsByTagName('head')[0].appendChild(style);
         });
         console.log("*****");
 
