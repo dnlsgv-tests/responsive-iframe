@@ -854,25 +854,22 @@ h4.sv_page_title {
 	margin-right: 0!important
 }
 
-@media only screen and (max-width:537px) {
-	input.sv_complete_btn {
-		width: 50%;
-		border-radius: 0!important
-	}
-	button#close-modal-survey-button {
-		width: 50%;
-		margin: 0!important;
-		border-radius: 0!important
-	}
-	.sv_main .sv_container .sv_body {
-		padding-bottom: 0!important
-	}
+input.sv_complete_btn {
+	width: 50%;
+	border-radius: 0!important
+}
+
+button#close-modal-survey-button {
+	width: 50%;
+	margin: 0!important;
+	border-radius: 0!important
+}
+
+.sv_main .sv_container .sv_body {
+	padding-bottom: 0!important
 }
 
 @media only screen and (max-width:539px) {
-	.sv_body {
-		background-color: #00f
-	}
 	div[name=b_nps] {
 		padding: 0
 	}
@@ -978,6 +975,10 @@ h4.sv_page_title {
 
 @media screen and (min-width: 430px) and (max-width: 480px){
 
+	body {
+		background-color: brown;
+	}
+
 	.sv_q_rating_min_text {
 		margin-top: 35px;
 	}
@@ -994,5 +995,66 @@ h4.sv_page_title {
 		box-sizing: border-box;
 		margin-right: 1.5px;
 		padding: 4px;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 758px) {
+	body {
+		background-color: blue;
+	}
+
+	.sv_q_rating_min_text {
+		margin-top: 45px;
+	}
+
+	.sv_q_rating {
+		width: 100%;
+		margin: 20px 0 20px 0;
+	}
+
+	.sv_main .sv_container .sv_body .sv_p_root .sv_q_rating .sv_q_rating_max_text {
+		position: absolute;
+		float: right;
+		right: 20px;
+	}
+
+	span.sv_q_rating_item_text.local-circle-nps {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		box-sizing: border-box;
+		margin-right: 1px;
+		padding: 6px;
+	}
+}
+
+/* >= 759px */
+@media screen and (min-width: 759px) {
+	.sv_main .sv_container .sv_body .sv_p_root .sv_q_rating .sv_q_rating_min_text {
+		margin-right: 0;
+		display: inline;
+		float: none;
+		position: static;
+		font-size: 12px;
+    	color: #585b5d;
+	}
+
+	.sv_main .sv_container .sv_body .sv_p_root .sv_q_rating .sv_q_rating_min_text {
+		margin-right: 0;
+		display: inline;
+		float: none;
+		position: static;
+	}
+
+	span.sv_q_rating_max_text {
+		margin-left: 0;
+		display: inline;
+		float: none;
+		font-size: 12px;
+		color: #585b5d;
+	}
+
+	span.sv_q_rating_item_text {
+		padding: 5px;
 	}
 }
