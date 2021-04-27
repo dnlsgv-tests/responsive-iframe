@@ -974,11 +974,6 @@ button#close-modal-survey-button {
 
 
 @media screen and (min-width: 430px) and (max-width: 480px){
-
-	body {
-		background-color: brown;
-	}
-
 	.sv_q_rating_min_text {
 		margin-top: 35px;
 	}
@@ -999,9 +994,6 @@ button#close-modal-survey-button {
 }
 
 @media screen and (min-width: 481px) and (max-width: 758px) {
-	body {
-		background-color: blue;
-	}
 
 	.sv_q_rating_min_text {
 		margin-top: 45px;
