@@ -21,8 +21,9 @@
         _window._apollo_frame = {};
         _apollo_frame = {};
 
+        let TYPE_OF_NPS = 'square';
         var json = {"pages": [{"name": "p\u00e1gina1", "title": "hola **daniel**", "elements": [{"name": "b_nps", "type": "rating", "title": "[NPS rating] Ingresa el texto **requerido** haciendo click aqu\u00ed", "rateMax": 10, "rateMin": 0, "isRequired": true, "requiredErrorText": {"es": "Debe ingresar una calificaci\u00f3n"}}, {"name": "b_verbatim-1", "type": "comment", "title": "[NPS entre 0 y 6] Escribe el texto para cuando b_nps sea menor a 6", "visibleIf": "{b_nps} <= 6", "isRequired": true, "placeHolder": {"es": "Comente"}, "requiredErrorText": {"es": "Debe ingresar una respuesta"}}, {"name": "b_verbatim-2", "type": "comment", "title": "[NPS entre 7 y 8] Escribe el texto para cuando b_nps est\u00e9 entre 7 y 8", "visibleIf": "{b_nps} = 7 or {b_nps} = 8", "isRequired": true, "placeHolder": {"es": "Comente"}, "requiredErrorText": {"es": "Debe ingresar una respuesta"}}, {"name": "b_verbatim-3", "type": "comment", "title": "[NPS entre 9 y 10] Escribe el texto para cuando b_nps est\u00e9 entre 9 y 10", "visibleIf": "{b_nps} >= 9", "isRequired": true, "placeHolder": {"es": "Comente"}, "requiredErrorText": {"es": "Debe ingresar una respuesta"}}, {"html": "[Texto inferior] este es un _texto_ de **ejemplo**", "name": "pregunta1", "type": "html", "visible": false}], "description": "texto _cursiva_ y este en **negrita**"}], "mainSurveyColor": "#11CEEB", "sideButtonColor": "#99FF00", "buttonTextNotNow": "Ahora no", "surveyFontFamily": "PFBeauSansPro", "surveyTitleColor": "#F2C110", "surveyQuestionColor": "#1B0303", "surveyDisclaimerColor": "#040000"};
-        json = {"pages": [{"name": "página1", "title": "**¡Cuéntanos como te fue!**", "elements": [{"name": "b_nps", "type": "rating", "title": "¿Qué tanto recomendarías Banco Falabella a un familiar o amigo?", "rateMax": 10, "rateMin": 0, "isRequired": true, "requiredErrorText": {"es": "Debe ingresar una calificación"}, "maxRateDescription": "Lo recomendaría", "minRateDescription": "No lo recomendaría"}, {"name": "b_verbatim-1", "type": "comment", "title": "¿Qué es lo que valoras de Banco Falabella? I", "visibleIf": "{b_nps} <= 6", "isRequired": true, "placeHolder": {"es": "Comente", "default": "Tu opinión es muy importante para nosotros."}, "requiredErrorText": {"es": "Debe ingresar una respuesta"}}, {"name": "b_verbatim-2", "type": "comment", "title": "¿Qué es lo que valoras de Banco Falabella? II", "visibleIf": "{b_nps} = 7 or {b_nps} = 8", "isRequired": true, "placeHolder": {"es": "Comente"}, "requiredErrorText": {"es": "Debe ingresar una respuesta"}}, {"name": "b_verbatim-3", "type": "comment", "title": "¿Qué es lo que valoras de Banco Falabella? III", "visibleIf": "{b_nps} >= 9", "isRequired": true, "placeHolder": {"es": "Comente"}, "requiredErrorText": {"es": "Debe ingresar una respuesta"}}, {"html": "[Texto inferior] este es un _texto_ de **ejemplo**", "name": "pregunta1", "type": "html", "visible": false}], "description": "Basado en tu experiencia. "}], "completeText": "Enviar", "completedHtml": "<h1>¡Gracias por ayudarnos a ser mejores!</h1>\n<p>Estamos constantemente trabajando para mejorar tu experiencia y tus\ncomentarios siempre son de gran ayuda. ¡Gracias por preferirnos!</p>", "mainSurveyColor": "#F88509", "sideButtonColor": "#0E166A", "buttonTextNotNow": "Ahora no", "surveyFontFamily": "PFBeauSansPro", "surveyTitleColor": "#42955F", "showQuestionNumbers": "off", "surveyQuestionColor": "#2F2E1A", "surveyDisclaimerColor": "#2A3731", "surveyQuestionNpsShape": "square"};
+        json = {"pages": [{"name": "página1", "title": "**¡Cuéntanos como te fue!**", "elements": [{"name": "b_nps", "type": "rating", "title": "¿Qué tanto recomendarías Banco Falabella a un familiar o amigo?", "rateMax": 10, "rateMin": 0, "isRequired": true, "requiredErrorText": {"es": "Debe ingresar una calificación"}, "maxRateDescription": "Lo recomendaría", "minRateDescription": "No lo recomendaría"}, {"name": "b_verbatim-1", "type": "comment", "title": "¿Qué es lo que valoras de Banco Falabella? I", "visibleIf": "{b_nps} <= 6", "isRequired": true, "placeHolder": {"es": "Comente", "default": "Tu opinión es muy importante para nosotros."}, "requiredErrorText": {"es": "Debe ingresar una respuesta"}}, {"name": "b_verbatim-2", "type": "comment", "title": "¿Qué es lo que valoras de Banco Falabella? II", "visibleIf": "{b_nps} = 7 or {b_nps} = 8", "isRequired": true, "placeHolder": {"es": "Comente"}, "requiredErrorText": {"es": "Debe ingresar una respuesta"}}, {"name": "b_verbatim-3", "type": "comment", "title": "¿Qué es lo que valoras de Banco Falabella? III", "visibleIf": "{b_nps} >= 9", "isRequired": true, "placeHolder": {"es": "Comente"}, "requiredErrorText": {"es": "Debe ingresar una respuesta"}}, {"html": "[Texto inferior] este es un _texto_ de **ejemplo**", "name": "pregunta1", "type": "html", "visible": false}], "description": "Basado en tu experiencia."}], "completeText": "Enviar", "completedHtml": "<h1>¡Gracias por ayudarnos a ser mejores!</h1>\n<p>Estamos constantemente trabajando para mejorar tu experiencia y tus\ncomentarios siempre son de gran ayuda. ¡Gracias por preferirnos!</p>", "mainSurveyColor": "#F88509", "sideButtonColor": "#0E166A", "buttonTextNotNow": "Ahora no", "surveyFontFamily": "PFBeauSansPro", "surveyTitleColor": "#42955F", "showQuestionNumbers": "off", "surveyQuestionColor": "#2F2E1A", "surveyDisclaimerColor": "#2A3731", "surveyQuestionNpsShape": TYPE_OF_NPS};
 
         var extras = {"b_algo": "HOLA"};
         var defaultThemeColors = {};
@@ -61,11 +62,28 @@
             });
 
         console.log("*****");
-        _apollo_frame.script.onAfterRenderQuestion.add(function() {
+        _apollo_frame.script.onAfterRenderSurvey.add(function() {
             let newNpsShapeValue = json.surveyQuestionNpsShape;
             let css = '';
             let responsiveCss = '';
             let style = document.createElement('style');
+
+
+            let npsElements = document.getElementsByClassName('sv_q_rating_item_text');
+
+            for(let i = 0; i < npsElements.length; i++) {
+                let currentElement = npsElements[i];
+
+                if(currentElement.classList.contains('sv_q_rating_item_text')) {
+                    if(newNpsShapeValue === 'square') {
+                        currentElement.classList.add('local-square-nps');
+                    }
+
+                    if(newNpsShapeValue === 'circle') {
+                        currentElement.classList.add('local-circle-nps');
+                    }
+                }
+            }
 
             if(newNpsShapeValue === undefined || newNpsShapeValue === 'circle') {                
                 css = '@media only screen and (max-width:318px){.sv_main .sv_container .sv_body .sv_p_root .sv_q_rating{width:270px!important;display:block;margin:auto}}@media only screen and (max-width:537px){.sv_main .sv_container .sv_body .sv_p_root .sv_q_rating{width:285px;display:block;margin:auto;margin-top:20px}.sv_main .sv_container .sv_body .sv_p_root .sv_q_rating .sv_q_rating_min_text{margin-top:-25px}}';
@@ -78,18 +96,6 @@
                 document.getElementsByTagName('head')[0].appendChild(style);            
                 return;
             };
-
-            let npsElements = document.getElementsByClassName('sv_q_rating_item_text');
-
-            for(let i = 0; i < npsElements.length; i++) {
-                let currentElement = npsElements[i];
-
-                if(currentElement.classList.contains('sv_q_rating_item_text')) {
-                    if(newNpsShapeValue === 'square') {
-                        currentElement.classList.add('local-square-nps');
-                    }
-                }
-            }
 
             if(newNpsShapeValue === 'square') {
                 css = '.sv_main .sv_container .sv_body .sv_p_root .sv_q_rating .sv_q_rating_item:not(:first-child) .sv_q_rating_item_text:not(:hover) { border-left-color: transparent !important; }';
@@ -115,7 +121,7 @@
             });
 
         var notNowButtonAdded = false;
-        _apollo_frame.script.onAfterRenderQuestion.add(function() {
+        _apollo_frame.script.onAfterRenderSurvey.add(function() {
             if(notNowButtonAdded) return;
             var notNowButton = document.createElement("button");
 
