@@ -713,7 +713,7 @@ h4.sv_page_title {
 
 .sv_main .sv_q_rating_item.active .sv_q_rating_item_text {
 	border: none;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23)
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .19), 0 3px 3px rgba(0, 0, 0, .23)
 }
 
 .sv_main .sv_body {
