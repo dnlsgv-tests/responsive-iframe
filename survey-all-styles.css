@@ -848,11 +848,6 @@ button#close-modal-survey-button {
 	}
 }
 
-.grecaptcha-badge {
-	visibility: hidden;
-}
-
-
 .sv_q_rating .sv_q_rating_item:nth-child(1) .sv_q_rating_item_text.local-square-nps {
 	border-bottom-left-radius: 5px;
 	border-top-left-radius: 5px;
@@ -861,4 +856,9 @@ button#close-modal-survey-button {
 .sv_q_rating .sv_q_rating_item:nth-child(11) .sv_q_rating_item_text.local-square-nps {
 	border-bottom-right-radius: 5px!important;
     border-top-right-radius: 5px!important;
+}
+
+
+.grecaptcha-badge {
+	visibility: hidden;
 }
