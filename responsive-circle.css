@@ -1,45 +1,177 @@
-/*BEGIN RESPONSIVE STYLES*/
+@media screen and (max-width: 335px){
+	.sv_main .sv_container .sv_body .sv_p_root .sv_q_rating .sv_q_rating_min_text {
+		margin-right: .5em;
+		display: block;
+		float: right;
+		position: absolute;
+		margin-top: 30px;
+	}	
 
-/*320px*/
-@media only screen and (max-width: 318px) {
-    .sv_main .sv_container .sv_body .sv_p_root .sv_q_rating {
-        width: 270px !important;
-        display: block;
-        margin: auto;
-    }
+	span.sv_q_rating_item_text.local-circle-nps {
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		box-sizing: border-box;
+		padding: 0;
+		margin-right: 0px;
+	}
 }
 
-/* < 540px*/
-@media only screen and (max-width: 537px) {
-    .sv_main .sv_container .sv_body .sv_p_root .sv_q_rating {
-        width: 285px;
-        display: block;
-        margin: auto;
-        margin-top: 20px;
-    }
+@media screen and (min-width: 336px) and (max-width: 357px){
 
-    .sv_main .sv_container .sv_body .sv_p_root .sv_q_rating .sv_q_rating_min_text {
-        margin-top: -25px;
-    }
-}
-/* < 576, Dentro del iframe son 2 pixeles menos que en el html donde se incrusta*/
-@media only screen and (max-width: 574px) {
-    /*.sv_body {
-    }
-    
-    input.sv_complete_btn {
-        width: 50%;
-        border-radius: 0 !important;
-    }
-    
-    button#close-modal-survey-button {
-        width: 50%;
-        margin: 0 !important;
-        border-radius: 0 !important;
-    }
+	.sv_main .sv_container .sv_body .sv_p_root .sv_q_rating .sv_q_rating_min_text {
+		margin-right: .5em;
+		display: block;
+		float: right;
+		position: absolute;
+		margin-top: 28px;
+	}
 
-    .sv_main .sv_container .sv_body {
-        padding-bottom: 0 !important;
-    }*/
+	span.sv_q_rating_item_text.local-circle-nps {
+		width: 28px;
+		height: 28px;
+		border-radius: 50%;
+		box-sizing: border-box;
+		padding: 0;
+		margin-right: 0px;
+	}
 }
-/*END RESPONSIVE STYLES*/
+
+@media screen and (min-width: 358px) and (max-width: 374px){
+
+	.sv_main .sv_container .sv_body .sv_p_root .sv_q_rating .sv_q_rating_min_text {
+		margin-right: .5em;
+		display: block;
+		float: right;
+		position: absolute;
+		margin-top: 30px;
+	}
+
+	span.sv_q_rating_item_text.local-circle-nps {
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		box-sizing: border-box;
+		padding: 0;
+		margin-right: 0px;
+	}	
+}
+
+@media screen and (min-width: 375px) and (max-width: 401px){
+
+	.sv_q_rating_min_text {
+		margin-top: 32px;
+	}	
+
+	span.sv_q_rating_item_text.local-circle-nps {
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		box-sizing: border-box;
+		margin-right: 1.5px;
+	}	
+}
+
+@media screen and (min-width: 402px) and (max-width: 429px){
+
+	.sv_q_rating_min_text {
+		margin-top: 35px;
+	}	
+
+	span.sv_q_rating_item_text.local-circle-nps {
+		width: 32.5px;
+		height: 32.5px;
+		border-radius: 50%;
+		box-sizing: border-box;
+		margin-right: 1.5px;
+		padding: 2px;
+	}
+}
+
+
+@media screen and (min-width: 430px) and (max-width: 480px){
+	.sv_q_rating_min_text {
+		margin-top: 32.5px;
+	}
+
+	.sv_q_rating {
+		width: 100%;
+		margin: 20px 0 20px 0;
+	}
+
+	span.sv_q_rating_item_text.local-circle-nps {
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+		box-sizing: border-box;
+		margin-right: 1.5px;
+		padding: 4px;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 758px) {
+
+	.sv_q_rating_min_text {
+		margin-top: 45px;
+	}
+
+	.sv_q_rating {
+		width: 100%;
+		margin: 20px 0 20px 0;
+	}
+
+	.sv_main .sv_container .sv_body .sv_p_root .sv_q_rating .sv_q_rating_max_text {
+		position: absolute;
+		float: right;
+		right: 20px;
+	}
+
+	span.sv_q_rating_item_text.local-circle-nps {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		box-sizing: border-box;
+		margin-right: 1px;
+		padding: 6px;
+	}
+}
+
+/* >= 759px */
+@media screen and (min-width: 759px) {
+	.sv_main .sv_container .sv_body .sv_p_root .sv_q_rating .sv_q_rating_min_text {
+		margin-right: 0;
+		display: inline;
+		float: none;
+		position: static;
+		font-size: 12px;
+    	color: #585b5d;
+	}
+
+	.sv_main .sv_container .sv_body .sv_p_root .sv_q_rating .sv_q_rating_min_text {
+		margin-right: 0;
+		display: inline;
+		float: none;
+		position: static;
+	}
+
+	span.sv_q_rating_max_text {
+		margin-left: 0;
+		display: inline;
+		float: none;
+		font-size: 12px;
+		color: #585b5d;
+	}
+
+	span.sv_q_rating_item_text {
+		padding: 5px;
+	}
+
+	span.sv_q_rating_item_text.local-circle-nps {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		box-sizing: border-box;
+		margin-right: 1px;
+		padding: 6px;
+	}
+}
