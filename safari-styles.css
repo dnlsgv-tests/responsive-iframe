@@ -4,7 +4,7 @@
 		display: block;
 		float: right;
 		position: absolute;
-		margin-top: 23px;
+		margin-top: 22px;
 	}
 	span.sv_q_rating_item_text.local-circle-nps {
 		width: 19px;
@@ -54,7 +54,7 @@
 
 @media screen and (min-width:375px) and (max-width:413px) {
 	.sv_q_rating_min_text {
-		margin-top: 32px;
+		margin-top: 24px;
 	}
 	span.sv_q_rating_item_text.local-circle-nps {
 		width: 27px;
@@ -104,4 +104,4 @@
 		margin-right: 1px;
 		padding: 6px;
 	}
-}
+}          
