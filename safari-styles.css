@@ -1,3 +1,21 @@
+@media screen and (min-width:300px) and (max-width:319px) {
+	.sv_main .sv_container .sv_body .sv_p_root .sv_q_rating .sv_q_rating_min_text {
+		margin-right: .5em;
+		display: block;
+		float: right;
+		position: absolute;
+		margin-top: 23px;
+	}
+	span.sv_q_rating_item_text.local-circle-nps {
+		width: 19px;
+		height: 19px;
+		border-radius: 50%;
+	}
+	.sv_main .sv_container .sv_body .sv_p_root .sv_q_rating {
+		line-height: 1.5em;
+	}
+}
+
 @media screen and (min-width:320px) and (max-width:374px) {
 	.sv_main .sv_container .sv_body .sv_p_root .sv_q_rating .sv_q_rating_min_text {
 		margin-right: .5em;
