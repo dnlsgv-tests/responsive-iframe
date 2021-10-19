@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Test importando script</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		window.onload = function() {
+			console.log('pagina cargada completamente');
+
+            window['apollo-YWxjby90ZXN0LWRhbmllbA=='].functions.addExtras('session_client_id', 'texto_de_largo_máximo_100');
+            
+            var event = new Event('openApolloModal');
+			document.dispatchEvent(event);
+		}
+	</script>
+    <script src="https://apollo-dev-public.loyal.ink/survey/YWxjby90ZXN0LWRhbmllbA==.js"></script>
+    
+</body>
+</html>
