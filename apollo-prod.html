@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Test importando script</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		window.onload = function() {
+			console.log('pagina cargada completamente');
+            
+            var event = new Event('autopia_asesor');
+			document.dispatchEvent(event);
+		}
+	</script>
+    <script src="https://apollo-public.loyal.ink/survey/dHJhdmVzaWEvYXV0b3BpYS1hc2Vzb3I=.js"></script>
+    
+</body>
+</html>
