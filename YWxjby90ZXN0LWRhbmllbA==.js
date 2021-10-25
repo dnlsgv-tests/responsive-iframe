@@ -23,7 +23,7 @@
         "-ms-flex-align: center;" +
         "align-items: center";
     a[b].elements.content = document.createElement("div");
-    a[b].elements.content.style.cssText = "overflow:hidden;" + "background-color: #fefefe;" + "margin: 15% auto;" + "padding: 0px;" + "border: 1px solid #888;" + "width: 600px;" + "border-radius: 6px";
+    a[b].elements.content.style.cssText = "overflow:hidden;" + "background-color: #fefefe;" + "margin: 15% auto;" + "padding: 0px;" + "border: 1px solid #888;" + "width: 610px;" + "border-radius: 6px";
     a[b].elements.close = document.createElement("span");
     a[b].elements.close.style.cssText = "color: #000;" + "float: right;" + "font-size: 28px;" + "font-weight: bold;" + "display: none";
     a[b].elements.close.innerHTML = "&times;";
