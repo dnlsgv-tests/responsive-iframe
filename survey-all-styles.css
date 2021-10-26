@@ -733,7 +733,7 @@ h5.sv_q_title {
 .not-now-button {
 	float: right;
 	margin-right: 10px!important;
-	background: #eff1f5!important;
+	background: #f2f4f7!important;
 	color: #000!important
 }
 
@@ -824,15 +824,15 @@ h4.sv_page_title {
 	font-weight: 400!important
 }
 
-input.sv_complete_btn {
-	width: 50%;
-	border-radius: 0!important
+input.sv_complete_btn,
+input.sv_next_btn,
+input.sv_prev_btn {
+	width: 150px;
+	border-radius: 5px !important;
 }
 
 button#close-modal-survey-button {
-	width: 50%;
-	margin: 0!important;
-	border-radius: 0!important
+	width: 150px;
 }
 
 .sv_main .sv_container .sv_body {
