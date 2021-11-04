@@ -867,3 +867,12 @@ button#close-modal-survey-button {
 .sv_main .sv_container .sv_body .sv_p_root .sv_row .sv_q table.sv_q_matrix_dropdown td:before, .sv_main .sv_container .sv_body .sv_p_root .sv_row .sv_q table.sv_q_matrix_dynamic td:before, .sv_main .sv_container .sv_body .sv_p_root .sv_row .sv_qstn table.sv_q_matrix_dropdown td:before, .sv_main .sv_container .sv_body .sv_p_root .sv_row .sv_qstn table.sv_q_matrix_dynamic td:before {
 	display: none;
 }
+
+input.sv_next_btn,
+input.sv_prev_btn,
+input.sv_complete_btn,
+input#close-modal-survey-button {
+	width: 33%;
+	margin: 0!important;
+	border-radius: 2.5px!important		
+}

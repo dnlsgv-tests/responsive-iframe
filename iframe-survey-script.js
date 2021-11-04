@@ -931,12 +931,12 @@
         var notNowButtonAdded = false;
         _apollo_frame.script.onAfterRenderSurvey.add(function() {
             if(notNowButtonAdded) return;
-            var notNowButton = document.createElement("button");
+            var notNowButton = document.createElement("input");
 
             notNowButton.id = 'close-modal-survey-button';
             notNowButton.type = "button";
-            notNowButton.className = "btn btn-info btn-xs close-modal not-now-button";
-            notNowButton.innerHTML = (json.buttonTextNotNow || 'Ahora no');
+            notNowButton.className = "close-modal not-now-button";
+            notNowButton.value = (json.buttonTextNotNow || 'Ahora no');
 
             document.querySelector('.sv_nav').appendChild(notNowButton);
 
