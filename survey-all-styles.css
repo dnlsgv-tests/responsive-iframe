@@ -871,6 +871,10 @@ input#close-modal-survey-button {
 	border-radius: 2.5px!important		
 }
 
+.sv_main .sv_container .sv_body .sv_progress .sv_progress_bar {
+	margin-top: 1em;
+}
+
 .grecaptcha-badge {
 	visibility: hidden;
 }
