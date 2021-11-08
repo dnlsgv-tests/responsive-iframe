@@ -872,7 +872,7 @@ input#close-modal-survey-button {
 }
 
 .sv_main .sv_container .sv_body .sv_progress .sv_progress_bar {
-	margin-top: 1em;
+	margin-top: 0.25em;
 }
 
 .grecaptcha-badge {
