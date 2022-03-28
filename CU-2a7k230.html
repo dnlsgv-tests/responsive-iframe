@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>PollPagoRapidoAPP</title>
+</head>
+<body>
+
+    <button onclick="openSurvey()">
+        OPEN SURVEY
+    </button>
+    
+    <script>
+    window.onload = function() {
+        window['apollo-YmFuY28tZmFsYWJlbGxhLWNoaWxlL3BhZ28tcmFwaWRvLXRjLWFwcC1jaGlsZQ=='].functions.addExtras('session_client_id', 'id_de_cliente');
+        window['apollo-YmFuY28tZmFsYWJlbGxhLWNoaWxlL3BhZ28tcmFwaWRvLXRjLWFwcC1jaGlsZQ=='].functions.addExtras('s_1001', 'gen_1');
+        window['apollo-YmFuY28tZmFsYWJlbGxhLWNoaWxlL3BhZ28tcmFwaWRvLXRjLWFwcC1jaGlsZQ=='].functions.addExtras('o_1001', 'nombre del cliente ingresado como extra');
+        window['apollo-YmFuY28tZmFsYWJlbGxhLWNoaWxlL3BhZ28tcmFwaWRvLXRjLWFwcC1jaGlsZQ=='].functions.addExtras('o_1002', 'apellidos del cliente ingresado como extra');
+    }
+
+    function openSurvey() {
+        console.log('opening survey');
+
+        let event = new Event('PollPagoRapidoAPP');
+        document.dispatchEvent(event);
+    }
+
+    </script>    
+
+    <script src="https://apollo-public.loyal.ink/survey/YmFuY28tZmFsYWJlbGxhLWNoaWxlL3BhZ28tcmFwaWRvLXRjLWFwcC1jaGlsZQ==.js"></script>
+
+</body>
+</html>
