@@ -88,8 +88,8 @@
         }
         if (c.data.eventId === "resizeModalHeight-YWxjby90ZXN0LWRhbmllbA==") {
             var d = c.data.data.realIframeFullHeight;
-            a[b].elements.content.style.height = d + "px";
-            a[b].elements.iframe.style.height = d + "px";
+            a[b].elements.content.style.height = (d + 7) + "px";
+            a[b].elements.iframe.style.height = (d + 7) + "px";
         }
         if (c.data.eventId === "showCloseModalButton-YWxjby90ZXN0LWRhbmllbA==") {
             a[b].elements.close.style = "float: right;" + "font-weight: lighter;" + "cursor: pointer;" + "font-size: 40px;" + "margin-right: 15px;" + "color: #4A4E52;";

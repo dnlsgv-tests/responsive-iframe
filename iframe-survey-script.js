@@ -128,7 +128,7 @@
         }
         
         function drawNpsQuestionWithBorderBottomColor(npsHtmlElement, typeOfNpsQuestion, npsColors) {
-        
+            console.log('[drawNpsQuestionWithBorderBottomColor]');
             if (typeOfNpsQuestion !== "1" && typeOfNpsQuestion !== "2" && typeOfNpsQuestion !== "3") {
                 return;
             }
@@ -600,7 +600,8 @@
         let TYPE_OF_NPS = 'square';
         var json = {"focusFirstQuestionAutomatic":false,"pages":[{"name":"página1","elements":[{"type":"rating","name":"b_nps-1","title":"[NPS rating] Ingresa el texto requerido haciendo click aquí","isRequired":true,"requiredErrorText":{"es":"Debe ingresar una calificación","default":"Esta pregunta es obligatoria"},"belongsToIndexResult":"1","parsedName":"b_nps","customNameSelected":"b_nps","rateMin":0,"rateMax":10},{"type":"comment","name":"b_verbatim-1","visibleIf":"{b_nps-1} <= 6","title":"[NPS entre 0 y 6] Escribe el texto para cuando b_nps sea menor a 6","isRequired":true,"requiredErrorText":{"es":"Debe ingresar una respuesta","default":"Esta pregunta es obligatoria"},"belongsToIndexResult":"1","parsedName":"b_verbatim","customNameSelected":"b_verbatim","placeHolder":{"es":"Comente"}},{"type":"comment","name":"b_verbatim-2","visibleIf":"{b_nps-1} = 7 or {b_nps-1} = 8","title":"[NPS entre 7 y 8] Escribe el texto para cuando b_nps esté entre 7 y 8","isRequired":true,"requiredErrorText":{"es":"Debe ingresar una respuesta","default":"Esta pregunta es obligatoria"},"belongsToIndexResult":"1","parsedName":"b_verbatim","customNameSelected":"b_verbatim","placeHolder":{"es":"Comente"}},{"type":"comment","name":"b_verbatim-3","visibleIf":"{b_nps-1} >= 9","title":"[NPS entre 9 y 10] Escribe el texto para cuando b_nps esté entre 9 y 10","isRequired":true,"requiredErrorText":{"es":"Debe ingresar una respuesta","default":"Esta pregunta es obligatoria"},"belongsToIndexResult":"1","parsedName":"b_verbatim","customNameSelected":"b_verbatim","placeHolder":{"es":"Comente"}}],"title":"test atributos widget web"},{"name":"página2","elements":[{"type":"text","name":"o_1-1","title":"entrada simple","belongsToIndexResult":"1","parsedName":"o_1","customNameSelected":"o_1"},{"type":"checkbox","name":"o_2-1","title":"checkboxes","belongsToIndexResult":"1","parsedName":"o_2","customNameSelected":"o_2","choices":["item1","item2","item3"]}]},{"name":"página3","elements":[{"type":"radiogroup","name":"o_3-1","title":"radiogroup","belongsToIndexResult":"1","parsedName":"o_3","customNameSelected":"o_3","choices":["item1","item2","item3"]},{"type":"dropdown","name":"o_4-1","title":"dropdown","belongsToIndexResult":"1","parsedName":"o_4","customNameSelected":"o_4","choices":["item1","item2","item3"]}]},{"name":"página4","elements":[{"type":"comment","name":"o_5-1","title":"comentario","belongsToIndexResult":"1","parsedName":"o_5","customNameSelected":"o_5"},{"type":"rating","name":"o_6-1","title":"rate","belongsToIndexResult":"1","parsedName":"o_6","customNameSelected":"o_6","rateValues":[{"value":"0","text":"0"},{"value":"1","text":"1"},{"value":"2","text":"2"},{"value":"3","text":"3"},{"value":"4","text":"4"},{"value":"5","text":"5"},{"value":"6","text":"6"},{"value":"7","text":"7"},{"value":"8","text":"8"},{"value":"9","text":"9"},{"value":"10","text":"10"}],"rateMin":0,"rateMax":10,"minRateDescription":"No recomendaría<br>en absoluto","maxRateDescription":"Definitivamente<br>recomendaría"}]},{"name":"página5","elements":[{"type":"matrix","name":"x_7_8_9_10-1","title":"matrix","belongsToIndexResult":"1","parsedName":"x_7_8_9_10","customNameSelected":"x_7_8_9_10","columns":[{"value":"1","text":"1"},{"value":"2","text":"2"},{"value":"3","text":"3"},{"value":"4","text":"4"},{"value":"5","text":"5"},{"value":"6","text":"6"},{"value":"7","text":"7"}],"rows":[{"value":"o_7","text":"Amabilidad del vendedor"},{"value":"o_8","text":"Tiempo de espera"},{"value":"o_9","text":"qwer"},{"value":"o_10","text":"asdf"}]}]}],"showQuestionNumbers":"off","showProgressBar":"top","pagePrevText":"Anterior","pageNextText":"Siguiente","completeText":"Enviar","mainSurveyColor":"#FC6502","sideButtonColor":"#000000","buttonTextNotNow":"Ahora no","surveyFontFamily":"PFBeauSansPro","surveyTitleColor":"#FC6502","surveyQuestionColor":"#665353","surveyDisclaimerColor":"#040000","surveyQuestionNpsShape":"square","transformMatrixToMatrixDropdownOnMobileDevices":true};
         json = {"pages":[{"name":"página1","title":{"es":"test atributos widget webb","default":"test atributos widget web"},"elements":[{"name":"b_nps-1","type":"rating","title":"[NPS rating] Ingresa el texto requerido haciendo click aquí","rateMax":10,"rateMin":0,"isRequired":true,"parsedName":"b_nps","requiredErrorText":{"es":"Debe ingresar una calificación","default":"Esta pregunta es obligatoria"},"customNameSelected":"b_nps","belongsToIndexResult":"1"},{"name":"b_verbatim-1","type":"comment","title":"[NPS entre 0 y 6] Escribe el texto para cuando b_nps sea menor a 6","visibleIf":"{b_nps-1} <= 6","isRequired":true,"parsedName":"b_verbatim","placeHolder":{"es":"Comente"},"requiredErrorText":{"es":"Debe ingresar una respuesta","default":"Esta pregunta es obligatoria"},"customNameSelected":"b_verbatim","belongsToIndexResult":"1"},{"name":"b_verbatim-2","type":"comment","title":"[NPS entre 7 y 8] Escribe el texto para cuando b_nps esté entre 7 y 8","visibleIf":"{b_nps-1} = 7 or {b_nps-1} = 8","isRequired":true,"parsedName":"b_verbatim","placeHolder":{"es":"Comente"},"requiredErrorText":{"es":"Debe ingresar una respuesta","default":"Esta pregunta es obligatoria"},"customNameSelected":"b_verbatim","belongsToIndexResult":"1"},{"name":"b_verbatim-3","type":"comment","title":"[NPS entre 9 y 10] Escribe el texto para cuando b_nps esté entre 9 y 10","visibleIf":"{b_nps-1} >= 9","isRequired":true,"parsedName":"b_verbatim","placeHolder":{"es":"Comente"},"requiredErrorText":{"es":"Debe ingresar una respuesta","default":"Esta pregunta es obligatoria"},"customNameSelected":"b_verbatim","belongsToIndexResult":"1"}]},{"name":"página2","elements":[{"name":"o_1-1","type":"text","title":"entrada simple","parsedName":"o_1","customNameSelected":"o_1","belongsToIndexResult":"1"},{"name":"o_2-1","type":"checkbox","title":"checkboxes","choices":["item1","item2","item3"],"parsedName":"o_2","customNameSelected":"o_2","belongsToIndexResult":"1"}]},{"name":"página3","elements":[{"name":"o_3-1","type":"radiogroup","title":"radiogroup","choices":["item1","item2","item3"],"parsedName":"o_3","customNameSelected":"o_3","belongsToIndexResult":"1"},{"name":"o_4-1","type":"dropdown","title":"dropdown","choices":["item1","item2","item3"],"parsedName":"o_4","customNameSelected":"o_4","belongsToIndexResult":"1"}]},{"name":"página4","elements":[{"name":"o_5-1","type":"comment","title":"comentario","parsedName":"o_5","customNameSelected":"o_5","belongsToIndexResult":"1"},{"name":"o_6-1","type":"rating","title":"rate","rateMax":10,"rateMin":0,"parsedName":"o_6","rateValues":[{"text":"0","value":"0"},{"text":"1","value":"1"},{"text":"2","value":"2"},{"text":"3","value":"3"},{"text":"4","value":"4"},{"text":"5","value":"5"},{"text":"6","value":"6"},{"text":"7","value":"7"},{"text":"8","value":"8"},{"text":"9","value":"9"},{"text":"10","value":"10"}],"customNameSelected":"o_6","maxRateDescription":"Definitivamente<br>recomendaría","minRateDescription":"No recomendaría<br>en absoluto","belongsToIndexResult":"1"}]},{"name":"página5","elements":[{"name":"x_7_8_9_10-1","rows":[{"text":"Amabilidad del vendedor","value":"o_7"},{"text":"Tiempo de espera","value":"o_8"},{"text":"qwer","value":"o_9"},{"text":"asdf","value":"o_10"}],"type":"matrix","title":"matrix","columns":[{"text":"1","value":"1"},{"text":"2","value":"2"},{"text":"3","value":"3"},{"text":"4","value":"4"},{"text":"5","value":"5"},{"text":"6","value":"6"},{"text":"7","value":"7"}],"parsedName":"x_7_8_9_10","customNameSelected":"x_7_8_9_10","belongsToIndexResult":"1"}]}],"locale":"de","completeText":"Enviar","pageNextText":"Siguiente","pagePrevText":"Anterior","mainSurveyColor":"#FC6502","showProgressBar":"top","sideButtonColor":"#000000","buttonTextNotNow":"Ahora no","surveyFontFamily":"PFBeauSansPro","surveyTitleColor":"#FC6502","showQuestionNumbers":"off","surveyQuestionColor":"#665353","surveyDisclaimerColor":"#040000","surveyQuestionNpsShape":"square","focusFirstQuestionAutomatic":false,"transformMatrixToMatrixDropdownOnMobileDevices":true};
-    
+        
+        json = {"completedHtml":"<div style=\"margin:0 auto;max-width:600px;\">\n   <div>\n      <div style=\"border-color: #49ac35; border: 2px solid #49ac35;\">\n         <div style=\"overflow-x:auto;\">\n            <p style=\"text-align:center;font-size:20px;margin-top:5px;\"><b>Gracias por darnos tu opinión.</b></p>\n            <p style=\"text-align:center;font-size:15px;\"><b>Tus comentarios y sugerencias serán de gran ayuda para seguir mejorando la experiencia de nuestros clientes.</b></p>\n         </div>\n      </div>\n   </div>\n</div>","pages":[{"name":"página1","elements":[{"type":"rating","name":"b_nps","title":"Basado en tu experiencia **pagando tu tarjeta por nuestra Web**, ¿Qué tanto recomendarías Banco Falabella a un familiar o amigo? Usa una escala de 0 a 10, donde 0 es no recomendarías en absoluto y 10 definitivamente recomendarías.","isRequired":true,"requiredErrorText":{"es":"Debe ingresar una calificación","default":"Please answer the question."},"rateMin":0,"rateMax":10,"minRateDescription":"No recomendarías en absoluto","maxRateDescription":"Definitivamente recomendarías"},{"type":"comment","name":"b_verbatim-1","title":"¿Cuáles son las razones de esta calificación?","isRequired":true,"requiredErrorText":{"es":"Debe ingresar una respuesta","default":"Please answer the question."},"cols":100,"rows":3,"placeHolder":{"es":"Comente","default":"Tu opinión es muy importante para nosotros."}}],"title":"¡Cuéntanos como te fue!"},{"name":"página2","elements":[{"type":"comment","name":"o_1003-1","title":"¿Con que  banco pagaste o intentaste pagar?","belongsToIndexResult":"1","parsedName":"o_1003","customNameSelected":"o_1003","rows":2}]}],"showPrevButton":false,"showQuestionNumbers":"off","showProgressBar":"top","pagePrevText":"Anterior","pageNextText":"Siguiente","completeText":"Enviar","mainSurveyColor":"#00943E","sideButtonColor":"#00943E","buttonTextNotNow":"Ahora no","surveyFontFamily":"PFBeauSansPro","surveyTitleColor":"#007A33","surveyQuestionColor":"#5C6166","surveyDisclaimerColor":"#5C6166","surveyQuestionNpsShape":"circle"};        
         json = addLocaleToTopOfTheJSON(json)
 
         var extras = {"b_algo": "HOLA"};
@@ -657,8 +658,10 @@
                     });            
                 }
             }
-            // if (typeOfCurrentQuestion === "rating") {
-            //     let typeOfNpsQuestion       = options.question.typeOfNps                    || DEFAULT_SURVEY_PROPERTIES.TYPE_OF_NPS,
+            if (typeOfCurrentQuestion === "rating") {
+                let          showBottomBorderColors  = options.question.showBottomBorderColors       || DEFAULT_SURVEY_PROPERTIES.SHOW_BOTTOM_BORDER_COLORS;
+
+                let typeOfNpsQuestion       = options.question.typeOfNps                    || DEFAULT_SURVEY_PROPERTIES.TYPE_OF_NPS;
             //         detractorColor          = options.question.detractorColor               || DEFAULT_SURVEY_PROPERTIES.DETRACTOR_COLOR,
             //         passiveColor            = options.question.passiveColor                 || DEFAULT_SURVEY_PROPERTIES.PASSIVE_COLOR,
             //         promotorColor           = options.question.promotorColor                || DEFAULT_SURVEY_PROPERTIES.PROMOTOR_COLOR,
@@ -687,16 +690,16 @@
             //     }
         
             //     //Mostrar borde inferior de colores
-            //     if (showBottomBorderColors) {
-            //         let npsHtmlElement = options.htmlElement;
-            //         let npsColors = {
-            //             detractorColor: detractorColor,
-            //             passiveColor: passiveColor,
-            //             promotorColor: promotorColor
-            //         };
+                if (showBottomBorderColors) {
+                    let npsHtmlElement = options.htmlElement;
+                    let npsColors = {
+                        detractorColor: "red",
+                        passiveColor: "yellow",
+                        promotorColor: "black"
+                    };
         
-            //         drawNpsQuestionWithBorderBottomColor(npsHtmlElement, typeOfNpsQuestion, npsColors);
-            //     }
+                    // drawNpsQuestionWithBorderBottomColor(npsHtmlElement, typeOfNpsQuestion, npsColors);
+                }
         
             //     options.question.minRateDescription = '';
             //     options.question.maxRateDescription = '';
@@ -708,7 +711,7 @@
                     
             //         $(npsBar).insertBefore($(questionHtmlElement).find(".custom-rating"));
             //     }
-            // }
+            }
         });
 
         _apollo_frame.script.onAfterRenderSurvey.add(function(survey, options) {
