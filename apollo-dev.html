@@ -7,6 +7,9 @@
 	<title>Test importando script</title>
 </head>
 <body>
+	<button onclick="openSurvey()">
+        Open survey
+    </button>
 
 	<script type="text/javascript">
 
@@ -15,9 +18,13 @@
 
             window['apollo-YWxjby90ZXN0LWRhbmllbA=='].functions.addExtras('session_client_id', 'texto_de_largo_máximo_100');
             
+		}
+
+        function openSurvey() {
             var event = new Event('openApolloModal');
 			document.dispatchEvent(event);
-		}
+        }
+
 	</script>
     <script src="https://apollo-dev-public.loyal.ink/survey/YWxjby90ZXN0LWRhbmllbA==.js"></script>
     
