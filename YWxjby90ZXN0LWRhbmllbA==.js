@@ -28,6 +28,7 @@
     a[b].elements.close.style.cssText = "color: #000;" + "float: right;" + "font-size: 28px;" + "font-weight: bold;" + "display: none";
     a[b].elements.close.innerHTML = "&times;";
     a[b].elements.close.onclick = function () {
+        a[b].active = false;
         a[b].elements.modal.style.visibility = "hidden";
     };
     a[b].elements.iframe = document.createElement("iframe");
