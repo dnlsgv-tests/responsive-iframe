@@ -853,7 +853,7 @@ button#close-modal-survey-button {
 	border-top-left-radius: 5px;
 }
 
-.sv_q_rating .sv_q_rating_item:nth-child(11) .sv_q_rating_item_text.local-square-nps {
+.sv_q_rating .sv_q_rating_item:last-child .sv_q_rating_item_text.local-square-nps {
 	border-bottom-right-radius: 5px!important;
     border-top-right-radius: 5px!important;
 }
