@@ -810,49 +810,14 @@
                 }
             }
             if (typeOfCurrentQuestion === "rating") {
-                let          showBottomBorderColors  = options.question.showBottomBorderColors       || DEFAULT_SURVEY_PROPERTIES.SHOW_BOTTOM_BORDER_COLORS;
-                let          showBorderColors  = options.question.showBorderColors       || DEFAULT_SURVEY_PROPERTIES.SHOW_BORDER_COLORS;
-                let          showBackgroundColors  = options.question.showBackgroundColors       || DEFAULT_SURVEY_PROPERTIES.SHOW_BACKGROUND_COLORS;
+                let showBottomBorderColors  = options.question.showBottomBorderColors || DEFAULT_SURVEY_PROPERTIES.SHOW_BOTTOM_BORDER_COLORS;
+                let showBorderColors  = options.question.showBorderColors || DEFAULT_SURVEY_PROPERTIES.SHOW_BORDER_COLORS;
+                let showBackgroundColors  = options.question.showBackgroundColors || DEFAULT_SURVEY_PROPERTIES.SHOW_BACKGROUND_COLORS;
 
-                let typeOfNpsQuestion       = options.question.typeOfNps                    || DEFAULT_SURVEY_PROPERTIES.TYPE_OF_NPS,
-                    detractorColor          = options.question.detractorColor               || DEFAULT_SURVEY_PROPERTIES.DETRACTOR_COLOR,
-                    passiveColor            = options.question.passiveColor                 || DEFAULT_SURVEY_PROPERTIES.PASSIVE_COLOR,
-                    promotorColor           = options.question.promotorColor                || DEFAULT_SURVEY_PROPERTIES.PROMOTOR_COLOR;
-            //         hasExtraQuestion        = options.question.hasExtraQuestion             || DEFAULT_SURVEY_PROPERTIES.HAS_EXTRA_QUESTION,
-            //         showNpsEmoticonBar      = options.question.showNpsEmoticonBar           || DEFAULT_SURVEY_PROPERTIES.SHOW_NPS_EMOTICON_BAR,
-            //         showBottomBorderColors  = options.question.showBottomBorderColors       || DEFAULT_SURVEY_PROPERTIES.SHOW_BOTTOM_BORDER_COLORS,
-            //         minRateDescription      = options.question.minRateDescription.trim()    || DEFAULT_SURVEY_PROPERTIES.MIN_RATE_DESCRIPTION,
-            //         maxRateDescription      = options.question.maxRateDescription.trim()    || DEFAULT_SURVEY_PROPERTIES.MAX_RATE_DESCRIPTION;
-        
-            //     // console.log('**********');
-            //     // console.log('name: ' + options.question.name);
-            //     // console.log('typeOfNpsQuestion: ' + typeOfNpsQuestion + `.${typeof typeOfNpsQuestion}`);
-            //     // console.log('detractorColor: ' + detractorColor);
-            //     // console.log('passiveColor: ' + passiveColor);
-            //     // console.log('promotorColor: ' + promotorColor);
-            //     // console.log('hasExtraQuestion: ' + hasExtraQuestion);
-            //     // console.log('showNpsEmoticonBar: ' + showNpsEmoticonBar);
-            //     // console.log('showBottomBorderColors: ' + showBottomBorderColors);
-            //     // console.log('minRateDescription: ' + minRateDescription);
-            //     // console.log('maxRateDescription: ' + maxRateDescription);
-            //     // console.log('**********');
-                
-            //     //Caritas disponibles
-            //     if (typeOfNpsQuestion === "1" && !hasExtraQuestion && showNpsEmoticonBar) {
-            //         addHtmlNpsEmoticonBar(options);
-            //     }
-        
-            //     //Mostrar borde inferior de colores
-                if (showBottomBorderColors) {
-                    let npsHtmlElement = options.htmlElement;
-                    let npsColors = {
-                        detractorColor: "red",
-                        passiveColor: "yellow",
-                        promotorColor: "black"
-                    };
-        
-                    // drawNpsQuestionWithBorderBottomColor(npsHtmlElement, typeOfNpsQuestion, npsColors);
-                }
+                let typeOfNpsQuestion = options.question.typeOfNps || DEFAULT_SURVEY_PROPERTIES.TYPE_OF_NPS,
+                    detractorColor = options.question.detractorColor || DEFAULT_SURVEY_PROPERTIES.DETRACTOR_COLOR,
+                    passiveColor = options.question.passiveColor || DEFAULT_SURVEY_PROPERTIES.PASSIVE_COLOR,
+                    promotorColor = options.question.promotorColor || DEFAULT_SURVEY_PROPERTIES.PROMOTOR_COLOR;
 
                 if (showBackgroundColors) {
                     let npsHtmlElement = options.htmlElement;
@@ -874,18 +839,6 @@
         
                     drawNpsQuestionWithBorderColor(npsHtmlElement, typeOfNpsQuestion, npsColors);
                 }
-                let npsHtmlElement = options.htmlElement;
-                console.log(npsHtmlElement);
-            //     options.question.minRateDescription = '';
-            //     options.question.maxRateDescription = '';
-        
-            //     if (minRateDescription !== "" && maxRateDescription !== "") {
-            //         let questionHtmlElement = options.htmlElement;
-        
-            //         let npsBar = '<div><div><span style="font-size: 80%; margin-bottom: 10px; display: inline-block;">' + minRateDescription + '</span><span style="font-size: 80%; text-align: right; float: right">' + maxRateDescription + '</span></div></div>';
-                    
-            //         $(npsBar).insertBefore($(questionHtmlElement).find(".custom-rating"));
-            //     }
             }
         });
 
