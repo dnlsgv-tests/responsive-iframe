@@ -908,6 +908,31 @@
                     }
                 }
             }    
+            
+            let style = document.createElement('style');
+            
+            let css = `
+                .sv_main .sv_container .sv_body .sv_p_root .sv_q_rating .sv_q_rating_max_text {
+                    color: ${json.mainSurveyColor};
+                }
+
+                .sv_main .sv_container .sv_body .sv_p_root .sv_q_rating .sv_q_rating_min_text {
+                    color: ${json.mainSurveyColor};
+                }
+
+                ::placeholder {
+                    color: ${json.mainSurveyColor};
+                }
+            `;
+
+            if(style.styleSheet) {
+                style.styleSheet.cssText = css;
+            } else {
+                style.appendChild(document.createTextNode(css));
+            }
+
+            document.getElementsByTagName('head')[0].appendChild(style);            
+
         });
         
         _apollo_frame.script.onMatrixCellValueChanged.add(function(survey, options) {    
@@ -1005,6 +1030,7 @@
 
         console.log("*****");
         _apollo_frame.script.onAfterRenderPage.add(function() {
+            console.log("onAfterRenderPage");
             let newNpsShapeValue = json.surveyQuestionNpsShape;
             let css = '';
             let responsiveCss = '';
