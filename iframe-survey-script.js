@@ -913,15 +913,15 @@
             
             let css = `
                 .sv_main .sv_container .sv_body .sv_p_root .sv_q_rating .sv_q_rating_max_text {
-                    color: ${json.mainSurveyColor};
+                    color: ${json.surveyQuestionColor};
                 }
 
                 .sv_main .sv_container .sv_body .sv_p_root .sv_q_rating .sv_q_rating_min_text {
-                    color: ${json.mainSurveyColor};
+                    color: ${json.surveyQuestionColor};
                 }
 
                 ::placeholder {
-                    color: ${json.mainSurveyColor};
+                    color: ${json.surveyQuestionColor};
                 }
             `;
 
